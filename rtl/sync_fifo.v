@@ -5,7 +5,7 @@
 module sync_fifo #(
     parameter DATA_WIDTH = 8,
     parameter FIFO_DEPTH = 8,
-    parameter ADDR_WIDTH = 3        // ceil(log2(FIFO_DEPTH))
+    parameter ADDR_WIDTH = $clog2        // ceil(log2(FIFO_DEPTH))
 )(
     input  wire                  clk,
     input  wire                  rst,
